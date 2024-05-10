@@ -8,8 +8,10 @@ public class LevelManager : Singleton<LevelManager>
 
     [SerializeField] GameObject[] tilePrefabs;
     [SerializeField] CameraMovement cameraMovement;
-    [SerializeField] int enemyCount;
     [SerializeField] Transform map;
+    public static int aliveEnemyCount;
+    int enemyCount;
+    public static int currentLevel = -1;
     //private Point startSpawn, endSpawn;
     //[SerializeField] private GameObject StartPortal;
     //[SerializeField] private GameObject EndPortal;
@@ -22,6 +24,9 @@ public class LevelManager : Singleton<LevelManager>
     // Start is called before the first frame update
     void Start()
     {
+        if(currentLevel == -1) currentLevel = 1;
+        enemyCount = currentLevel * 5;
+        aliveEnemyCount = enemyCount;
         CreateLevel();  
         StartCoroutine(SpawnEnemy());
     }
@@ -29,9 +34,9 @@ public class LevelManager : Singleton<LevelManager>
     {
         for (int i = 0; i < enemyCount; i++) 
         {
-            GameObject e= Instantiate(tilePrefabs[2]);
+            GameObject e = Instantiate(tilePrefabs[2]);
             e.SetActive(true);
-            e.GetComponent<EnemyMover>().health = i * 5;
+            e.GetComponent<EnemyMover>().health = 5 + i * 5;
             yield return new WaitForSeconds(3f);
         }
 
@@ -59,7 +64,6 @@ public class LevelManager : Singleton<LevelManager>
         maxTile = Tiles[new Point(mapX-1,mapY-1)].transform.position;
         cameraMovement.SetLimits(new Vector3(maxTile.x +TileSize,maxTile.y -TileSize));
 
-        //SpawnPortal();
     }
 
     private void PlaceTiles(string tileType, int x, int y,Vector3 worldStart)
@@ -76,12 +80,4 @@ public class LevelManager : Singleton<LevelManager>
         string data = bindData.text.Replace(Environment.NewLine, string.Empty);
         return data.Split('-');
     }
-    //private void SpawnPortal()
-    //{
-    //    startSpawn=new Point(0,0);
-    //    Instantiate(StartPortal, Tiles[startSpawn].transform.position,Quaternion.identity);
-
-    //    endSpawn = new Point(11, 6);
-    //    Instantiate(EndPortal, Tiles[endSpawn].transform.position, Quaternion.identity);
-    //}
 }

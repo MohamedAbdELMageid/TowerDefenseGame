@@ -9,6 +9,7 @@ TagManager:
   - Target
   - Bullet
   - End
+  - UpgradeMenu
   layers:
   - Default
   - TransparentFX

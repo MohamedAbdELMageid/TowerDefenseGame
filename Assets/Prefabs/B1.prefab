@@ -148,6 +148,7 @@ MonoBehaviour:
   enemies: []
   bullets:
   - {fileID: 7512753447757824472}
+  upgrades: []
   idle: {fileID: 21300000, guid: cf602370d5773aa498eb5338b46a7e02, type: 3}
 --- !u!95 &7438971944103121244
 Animator:

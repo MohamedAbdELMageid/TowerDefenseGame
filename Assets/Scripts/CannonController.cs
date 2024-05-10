@@ -1,17 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.EventSystems;
 
 public class CannonController : MonoBehaviour
 {
     [SerializeField] List<Transform> enemies;
     [SerializeField] List<GameObject> bullets;
+    [SerializeField] List<GameObject> upgrades;
+    GameObject upgradeMenu;
     [SerializeField] Sprite idle;
     float timer;
     Animator animator;
     void Start()
     {
+        upgradeMenu = GameObject.FindGameObjectWithTag("UpgradeMenu");
         timer = 0;
         enemies = new List<Transform>();
         animator = GetComponent<Animator>();
@@ -58,5 +60,13 @@ public class CannonController : MonoBehaviour
         {
             enemies.Remove(collision.transform);
         }
+    }
+    public void UpgradeCannon()
+    {
+        upgradeMenu.SetActive(true);
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        upgradeMenu.SetActive(true);
     }
 }

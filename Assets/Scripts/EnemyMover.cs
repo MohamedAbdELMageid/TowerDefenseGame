@@ -8,6 +8,7 @@ public class EnemyMover : MonoBehaviour
     public int health;
     [SerializeField] List<Transform> targets;
     [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject winMenu;
     [SerializeField] float speed;
     Transform m_Transform;
     Animator m_Animator;
@@ -23,6 +24,12 @@ public class EnemyMover : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject);
+            LevelManager.aliveEnemyCount--;
+            if(LevelManager.aliveEnemyCount == 0)
+            {
+                Time.timeScale = 0;
+                winMenu.SetActive(true);
+            }
         }
         if(targets.Count > 0) m_Transform.position = Vector3.MoveTowards(m_Transform.position, targets[0].position, Time.deltaTime * speed);
     }
