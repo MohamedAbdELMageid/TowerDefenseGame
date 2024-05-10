@@ -5,17 +5,24 @@ using UnityEngine.UI;
 
 public class CanonButton : MonoBehaviour
 {
-    [SerializeField] private GameObject canonPrefab;
-    [SerializeField]private Sprite sprite;
-    [SerializeField]private int price;
-    [SerializeField]private Text priceText;
-
-    public GameObject CanonPrefab { get => canonPrefab;  }
-    public Sprite Sprite { get => sprite;  }
-    public int Price { get => price; private set => price = value; }
+    [SerializeField] private List<GameObject> canonPrefab;
+    [SerializeField] private List<Sprite> sprite;
+    [SerializeField] private Text priceText;
+    public int Level;
+    public List<int> price;
+    public GameObject CanonPrefab { get => canonPrefab[Level];  }
+    public Sprite Sprite { get => sprite[Level];  }
 
     private void Start()
     {
-        priceText.text = Price + "$";
+        priceText.text = price[Level] + "$";
+    }
+    public void Upgrade(Image UI)
+    {
+        if (Level == sprite.Count - 1) return;
+        Level++;
+        GetComponent<Image>().sprite = sprite[Level];
+        UI.sprite = sprite[Level];
+        priceText.text = price[Level] + "$";
     }
 }

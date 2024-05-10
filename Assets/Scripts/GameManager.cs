@@ -31,19 +31,12 @@ public class GameManager : Singleton<GameManager>
 
     public void PickCanon(CanonButton canonButton)
     {
-        if (Currency >= canonButton.Price) 
+        if (Currency >= canonButton.price[canonButton.Level]) 
         {
             this.clickedCanon = canonButton;
             Hover.Instance.Activate(canonButton.Sprite);
+            Currency -= clickedCanon.price[canonButton.Level];
         }
-    }
-    public void BuyCanon()
-    {
-        if (Currency >= clickedCanon.Price) 
-        {
-            Currency -= clickedCanon.Price;
-        }
-        clickedCanon = null;
     }
 
     private void HandleEscape()

@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 508343707}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1535,10 +1535,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: {fileID: 31649327473811060, guid: 2a981b29dfc721d4a9ae5a28510bb623, type: 3}
-  sprite: {fileID: 21300000, guid: cf602370d5773aa498eb5338b46a7e02, type: 3}
-  price: 5
+  canonPrefab:
+  - {fileID: 31649327473811060, guid: 2a981b29dfc721d4a9ae5a28510bb623, type: 3}
+  - {fileID: 6286558824012007726, guid: ff496d3ed4d3f3942b6506df6b1e2e7d, type: 3}
+  - {fileID: 5716998381070517971, guid: 3d1fc7ffb4c60bd44b29e6c81ac8c528, type: 3}
+  - {fileID: 3654889510162084006, guid: 6f2a83083d0dc9f47bbb2fc09186ef1a, type: 3}
+  sprite:
+  - {fileID: 21300000, guid: cf602370d5773aa498eb5338b46a7e02, type: 3}
+  - {fileID: 21300000, guid: 4b7e62aa798bcae42bb3fd6761aa8afb, type: 3}
+  - {fileID: 21300000, guid: 3b80b522296660441bb1a6ba6f6c1933, type: 3}
+  - {fileID: 21300000, guid: 4fdbc01baeb1b114dbea1e6826584625, type: 3}
   priceText: {fileID: 644424103}
+  Level: 0
+  price: 070000000c0000000f00000014000000
 --- !u!1 &388856115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,10 +1765,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1876660726}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ShowMain
-        m_Mode: 1
+      - m_Target: {fileID: 508343707}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1979,7 +1988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &454456373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1995,10 +2004,10 @@ RectTransform:
   - {fileID: 844425646}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
+  m_SizeDelta: {x: 70, y: 56.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454456374
 MonoBehaviour:
@@ -2106,10 +2115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: {fileID: 5335030420334591188, guid: 803d0ea4418ec7a4d93298dbabff364c, type: 3}
-  sprite: {fileID: 21300000, guid: 220d124c4f2e22f41b1a7f53fc4149af, type: 3}
-  price: 7
+  canonPrefab: []
+  sprite: []
   priceText: {fileID: 844425649}
+  Level: 0
+  price: 
 --- !u!1 &498628394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &508343708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2279,6 +2289,7 @@ RectTransform:
   - {fileID: 561184202}
   - {fileID: 876081978}
   - {fileID: 1489431532}
+  - {fileID: 1390847536}
   - {fileID: 1235359778}
   m_Father: {fileID: 2146997939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5276,7 +5287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1111556578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5292,10 +5303,10 @@ RectTransform:
   - {fileID: 1903329146}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
+  m_SizeDelta: {x: 70, y: 56.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111556579
 MonoBehaviour:
@@ -5403,10 +5414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: {fileID: 35637930588671316, guid: 8bebffd9552a45a40a87ab5635897378, type: 3}
-  sprite: {fileID: 21300000, guid: 6b8b738f0975a8947928cda97e9ad061, type: 3}
-  price: 7
+  canonPrefab: []
+  sprite: []
   priceText: {fileID: 1903329149}
+  Level: 0
+  price: 
 --- !u!1 &1166379207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,7 +5553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191777569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5557,10 +5569,10 @@ RectTransform:
   - {fileID: 870694900}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
+  m_SizeDelta: {x: 70, y: 56.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191777570
 MonoBehaviour:
@@ -5668,10 +5680,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: {fileID: 436910400303939015, guid: 0c9f4d4b78dcc184fbe3e7d05602b232, type: 3}
-  sprite: {fileID: 21300000, guid: 83aed46bb882e264fa92acb9a44866b2, type: 3}
-  price: 12
+  canonPrefab: []
+  sprite: []
   priceText: {fileID: 870694903}
+  Level: 0
+  price: 
 --- !u!1 &1201884419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,7 +6007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1225919697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6010,10 +6023,10 @@ RectTransform:
   - {fileID: 1287383810}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
+  m_SizeDelta: {x: 70, y: 56.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225919698
 MonoBehaviour:
@@ -6121,10 +6134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: {fileID: 5491040723579431582, guid: c5f5cbd649c014a418e9d8a76666e699, type: 3}
-  sprite: {fileID: 21300000, guid: 261fec024053afa48914f5176edb8127, type: 3}
-  price: 10
+  canonPrefab: []
+  sprite: []
   priceText: {fileID: 1287383813}
+  Level: 0
+  price: 
 --- !u!1 &1235359777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,11 +6879,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 677470999}
-  m_Father: {fileID: 2146997939}
+  m_Father: {fileID: 508343708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -84, y: -61}
+  m_AnchoredPosition: {x: -52.61798, y: -61}
   m_SizeDelta: {x: 65.12, y: 53.684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390847537
@@ -8219,7 +8233,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1825547170}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 339415626}
+        m_TargetAssemblyTypeName: CanonButton, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 561184204}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1825547170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10275,7 +10301,6 @@ RectTransform:
   - {fileID: 187998676}
   - {fileID: 188385701}
   - {fileID: 508343708}
-  - {fileID: 1390847536}
   - {fileID: 111076714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

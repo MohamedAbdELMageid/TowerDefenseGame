@@ -48,7 +48,6 @@ public class TileScript : MonoBehaviour
         canon.transform.SetParent(transform);
         canon.transform.position = new(canon.transform.position.x, canon.transform.position.y, 0);
         IsEmpty = false;
-        GameManager.Instance.BuyCanon();
         Hover.Instance.Deactivate();
         ColorTile(Color.white);
     }
