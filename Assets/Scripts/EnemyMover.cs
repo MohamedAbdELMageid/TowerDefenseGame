@@ -27,6 +27,7 @@ public class EnemyMover : MonoBehaviour
             LevelManager.aliveEnemyCount--;
             if(LevelManager.aliveEnemyCount == 0)
             {
+                SoundManager.Instance.PlaySfx("Winning");
                 Time.timeScale = 0;
                 winMenu.SetActive(true);
             }

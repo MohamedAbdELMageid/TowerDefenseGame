@@ -681,7 +681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d437ae443a72f049bf493f9afa83c8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1282,7 +1282,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198005664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 454456377}
+        m_TargetAssemblyTypeName: CanonButton, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1235359780}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &198005664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1547,7 +1559,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4fdbc01baeb1b114dbea1e6826584625, type: 3}
   priceText: {fileID: 644424103}
   Level: 0
-  price: 070000000c0000000f00000014000000
+  price: 05000000080000000c00000012000000
 --- !u!1 &388856115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,7 +2000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &454456373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2004,10 +2016,10 @@ RectTransform:
   - {fileID: 844425646}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
-  m_SizeDelta: {x: 70, y: 56.53}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454456374
 MonoBehaviour:
@@ -2115,11 +2127,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: []
-  sprite: []
+  canonPrefab:
+  - {fileID: 5335030420334591188, guid: 803d0ea4418ec7a4d93298dbabff364c, type: 3}
+  - {fileID: 1059305773661611009, guid: 5bf8287ac426c3746aea95b9db6351f7, type: 3}
+  - {fileID: 3389822815949921666, guid: 68a1862c824995b4587d0bf886013c07, type: 3}
+  - {fileID: 6776888476950878098, guid: adf7208250625154688ca80fec4e2fe4, type: 3}
+  sprite:
+  - {fileID: 21300000, guid: 220d124c4f2e22f41b1a7f53fc4149af, type: 3}
+  - {fileID: 21300000, guid: 7b2522b8a7ebbef45ad62b2a35424add, type: 3}
+  - {fileID: 21300000, guid: fef8125c159b89f4bb6b9d5203d68159, type: 3}
+  - {fileID: 21300000, guid: 0b44bd8ea6606444c86f496d38421df7, type: 3}
   priceText: {fileID: 844425649}
   Level: 0
-  price: 
+  price: 0c000000120000001600000019000000
 --- !u!1 &498628394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3197,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 677471001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1111556582}
+        m_TargetAssemblyTypeName: CanonButton, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1390847538}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &677471001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5108,7 +5140,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1050660514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1191777573}
+        m_TargetAssemblyTypeName: CanonButton, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 876081980}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1050660514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5229,7 +5273,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1064319264}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225919701}
+        m_TargetAssemblyTypeName: CanonButton, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1489431534}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1064319264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5287,7 +5343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1111556578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5303,10 +5359,10 @@ RectTransform:
   - {fileID: 1903329146}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
-  m_SizeDelta: {x: 70, y: 56.53}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111556579
 MonoBehaviour:
@@ -5414,11 +5470,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: []
-  sprite: []
+  canonPrefab:
+  - {fileID: 35637930588671316, guid: 8bebffd9552a45a40a87ab5635897378, type: 3}
+  - {fileID: 4784080042156899312, guid: 978abe76205eeb548a37c5c0eb672add, type: 3}
+  - {fileID: 6077565195064142670, guid: c0786febcfde2734e97ad91413ea9b43, type: 3}
+  - {fileID: 2965970658557500116, guid: 320a36d24ef0a2f4e9bb5191db25f5ea, type: 3}
+  sprite:
+  - {fileID: 21300000, guid: 6b8b738f0975a8947928cda97e9ad061, type: 3}
+  - {fileID: 21300000, guid: 3cc2a3fbc5c3def4d8b46ad1085195a9, type: 3}
+  - {fileID: 21300000, guid: 4808021fc8e640d49b02d847042783bc, type: 3}
+  - {fileID: 21300000, guid: 6106471206b862c45a0ec9b258b0f7a5, type: 3}
   priceText: {fileID: 1903329149}
   Level: 0
-  price: 
+  price: 0a0000000f0000001200000017000000
 --- !u!1 &1166379207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,7 +5617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1191777569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5569,10 +5633,10 @@ RectTransform:
   - {fileID: 870694900}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
-  m_SizeDelta: {x: 70, y: 56.53}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191777570
 MonoBehaviour:
@@ -5680,11 +5744,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: []
-  sprite: []
+  canonPrefab:
+  - {fileID: 436910400303939015, guid: 0c9f4d4b78dcc184fbe3e7d05602b232, type: 3}
+  - {fileID: 2205963274395085470, guid: fe19da2ab3787e04aa968ddb0c2162ba, type: 3}
+  - {fileID: 2265012961681087073, guid: 2728aa686aaa3e74c910d7ae5866f7ee, type: 3}
+  - {fileID: 2720605149630643055, guid: f6e281f7d75a44242aba8a979c9e156a, type: 3}
+  sprite:
+  - {fileID: 21300000, guid: 83aed46bb882e264fa92acb9a44866b2, type: 3}
+  - {fileID: 21300000, guid: d0e5ebc8386e1b24cb6b2cf1d922d5be, type: 3}
+  - {fileID: 21300000, guid: 69d4669b0320e104f89f034cf81baa3c, type: 3}
+  - {fileID: 21300000, guid: 67d3fa22512794249a6b5294ada2c12f, type: 3}
   priceText: {fileID: 870694903}
   Level: 0
-  price: 
+  price: 070000000c0000000f00000014000000
 --- !u!1 &1201884419
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,7 +6079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1225919697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6023,10 +6095,10 @@ RectTransform:
   - {fileID: 1287383810}
   m_Father: {fileID: 1942654385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 315.7684, y: -35.0181}
-  m_SizeDelta: {x: 70, y: 56.53}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225919698
 MonoBehaviour:
@@ -6134,11 +6206,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b30e284f659c747b74358b089076c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonPrefab: []
-  sprite: []
+  canonPrefab:
+  - {fileID: 5491040723579431582, guid: c5f5cbd649c014a418e9d8a76666e699, type: 3}
+  - {fileID: 4201185081518339125, guid: 023f8ee1b94e4fd46ac141fa8287ae56, type: 3}
+  - {fileID: 1834975518267534419, guid: aff6b51e0f3379f45a7fc0bbfe54848f, type: 3}
+  - {fileID: 5356112343273807158, guid: 5b0cb12c5c2dbaa47936b881bfb6cb79, type: 3}
+  sprite:
+  - {fileID: 21300000, guid: 261fec024053afa48914f5176edb8127, type: 3}
+  - {fileID: 21300000, guid: 8f6bdc5404838a242b1f3e163597c14b, type: 3}
+  - {fileID: 21300000, guid: 1207e88fd106ecd4c8eb32811dabbea5, type: 3}
+  - {fileID: 21300000, guid: 9c244ff16fad45943a5e7b9019633ece, type: 3}
   priceText: {fileID: 1287383813}
   Level: 0
-  price: 
+  price: 070000000c0000000f00000015000000
 --- !u!1 &1235359777
 GameObject:
   m_ObjectHideFlags: 0
