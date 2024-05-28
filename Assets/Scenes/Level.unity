@@ -4544,7 +4544,7 @@ MonoBehaviour:
   - {fileID: 1654285332239710213, guid: 32253b81ce3a2f44b844094dddc4053a, type: 3}
   - {fileID: 2684293754768086405, guid: e348b42c2cfbb3d42b4e2473704a726b, type: 3}
   - {fileID: 2065719983}
-  - {fileID: 7851468922435745058, guid: ccb4df01047757d49b059bd4cd2da3f0, type: 3}
+  - {fileID: 8746109259026292071, guid: f68deaf5bdb93544e99e02698ceaffbe, type: 3}
   cameraMovement: {fileID: 519420033}
   map: {fileID: 1714630658}
 --- !u!4 &934522123
