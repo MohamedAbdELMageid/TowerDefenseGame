@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanonButton : MonoBehaviour
+public class CanonButton : Singleton<CanonButton>
 {
     [SerializeField] private List<GameObject> canonPrefab;
     [SerializeField] private List<Sprite> sprite;

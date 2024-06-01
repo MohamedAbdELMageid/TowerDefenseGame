@@ -12,6 +12,7 @@ public class LevelManager : Singleton<LevelManager>
     public static int aliveEnemyCount;
     int enemyCount;
     public static int currentLevel = -1;
+    
     //private Point startSpawn, endSpawn;
     //[SerializeField] private GameObject StartPortal;
     //[SerializeField] private GameObject EndPortal;
