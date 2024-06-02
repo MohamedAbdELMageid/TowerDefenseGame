@@ -22,6 +22,7 @@ public class EnemyMover : MonoBehaviour
     {
         if(health <= 0)
         {
+            GameManager.currency += 2 * LevelManager.currentLevel; 
             Destroy(gameObject);
             LevelManager.aliveEnemyCount--;
             if(LevelManager.aliveEnemyCount == 0)
