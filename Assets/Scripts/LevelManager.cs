@@ -69,6 +69,7 @@ public class LevelManager : Singleton<LevelManager>
 
     private void PlaceTiles(string tileType, int x, int y,Vector3 worldStart)
     {
+        Debug.Log(tileType);
         int tileIndex = int.Parse(tileType);
 
         TileScript newTile = Instantiate(tilePrefabs[tileIndex]).GetComponentInChildren<TileScript>();
@@ -79,6 +80,7 @@ public class LevelManager : Singleton<LevelManager>
     {
         TextAsset bindData = Resources.Load("Level") as TextAsset;
         string data = bindData.text.Replace(Environment.NewLine, string.Empty);
+        Debug.Log("DATAAAAAAAAAAAAAAAAA " + data);
         return data.Split('-');
     }
 }
