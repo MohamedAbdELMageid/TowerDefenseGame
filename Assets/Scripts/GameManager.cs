@@ -36,7 +36,7 @@ public class GameManager : Singleton<GameManager>
         if (currency >= canonButton.price[canonButton.Level]) 
         {
             this.clickedCanon = canonButton;
-            Hover.Instance.Activate(canonButton.Sprite);
+            //Hover.Instance.Activate(canonButton.Sprite);
             currency -= clickedCanon.price[canonButton.Level];
         }
     }

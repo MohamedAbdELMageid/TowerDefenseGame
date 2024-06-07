@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
                 {
                     if (Mathf.Abs(swipeDelta.x) > Mathf.Abs(swipeDelta.y))
                     {
-                        if (swipeDelta.x > 0)
+                        if (swipeDelta.x < 0)
                         {
                             // Swipe right
                             mainCamera.transform.Translate(cameraSpeed * Time.deltaTime * Vector3.right);
