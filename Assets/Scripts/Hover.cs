@@ -14,7 +14,7 @@ public class Hover : Singleton<Hover>
     // Update is called once per frame
     void Update()
     {
-        FollowMouse();
+        //FollowMouse();
     }
 
     private void FollowMouse()
